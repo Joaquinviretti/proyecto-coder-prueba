@@ -1,0 +1,232 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav portada aside"
+    "nav servicios aside"
+    "nav footer footer";
+
+    grid-template-columns: 150px 3fr 0.5fr;
+    grid-template-rows: 200px 80vh auto 300px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.boton {
+    background-color: #F15025;
+    color: #E6E8E6;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.titulo {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/*** Header ***/
+header {
+    background-color: #191919;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.headerLeft img {
+    width: 50px;
+}
+
+header h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.nav {
+    padding: 20px 0;
+    grid-area: nav;
+    background-color: gray;
+    position: fixed;
+    width: 150px;
+    height: 100%;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.nav ul li {
+    margin: 30px 0px;
+}
+
+.nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+/*** Portada ***/
+#portada {
+    background-color: #CED0CE;
+    color: #191919;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    grid-area: portada;
+}
+
+#portada h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#portada p {
+    font-size: 1.3rem;
+    margin: 30px 0;
+    text-align: center;
+    max-width: 1000px;
+}
+
+#portada a {
+    font-size: 1.5rem;
+}
+
+/*** servicios ***/
+
+#servicios {
+    padding: 50px;
+    grid-area: servicios;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 200px;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "card1 card2 card3";
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.cardServicio1 {
+    grid-area: card1;
+}
+
+.cardServicio2 {
+    grid-area: card2;
+}
+
+.cardServicio3 {
+    grid-area: card3;
+}
+
+.serviciosContainer {
+   /* flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.cardServicio {
+    width: 320px;
+    margin: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.cardServicio p {
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+aside {
+    grid-area: aside;
+
+}
+
+/*** footer ***/
+footer {
+    background-color: #E6E8E6;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   
+    padding: 50px 0;
+    grid-area: footer;
+}
+
+footer a {
+    color: #191919;
+}
+
+.redes {
+    display: flex;
+}
+
+.footerColumn {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+aside {
+    padding-top: 40px;
+}
+
+.novedadContainer {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+aside article {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.novedadText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+

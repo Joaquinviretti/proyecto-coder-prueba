@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFix | Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../img/logo.png" width="50" alt="Logo ifix">
+            </a>
+            <h1>Ifix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>¡Envianos tu consulta!</h2>
+            <form action="">
+
+                <!-- EL VALOR DEL FOR DEL LABEL, 
+                    TIENE QUE COINCIDIR CON EL ID DEL INPUT ASOCIADO -->
+
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+
+                    <div>
+                        <label for="nombre">Ingrese su nombre</label>
+                        <input placeholder="Juan" id="nombre" type="text">
+                    </div>
+
+                    <div>
+                        <label for="apellido">Ingrese su apellido</label>
+                        <input placeholder="Pérez" id="apellido" type="text">
+                    </div>
+
+                    <div>
+                        <label for="edad">Ingrese su edad</label>
+                        <input type="number" id="edad">
+                    </div>
+
+                    <div>
+                        <label for="localidad">Seleccione su localidad</label>
+                        <select required name="" id="localidad">
+                            <option value="">Zona norte</option>
+                            <option value="">CABA</option>
+                            <option value="">Zona sur</option>
+                            <option value="">Zona oeste</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información del dispositivo</legend>
+
+                    <div>
+                        <label for="novedades">Deseo recibir novedades</label>
+                        <input id="novedades" type="checkbox">
+                    </div>
+
+                    <h2>Seleccione su dispositivo:</h2>
+                    <div>
+                        <label for="iphone">iPhone</label>
+                        <input id="iphone" type="radio" name="dispositivo" value="iphone">
+
+                        <label for="ipad">iPad</label>
+                        <input type="radio" id="ipad" name="dispositivo" value="ipad">
+
+                        <label for="watch">Apple Watch</label>
+                        <input type="radio" id="watch" name="dispositivo" value="watch">
+                    </div>
+
+
+                    <div>
+                        <label for="consulta">Ingrese su consulta:</label>
+                        <br><br>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h4>Información de contacto</h4>
+            <p>Dirección: Calle Falsa 123</p>
+            <p>Teléfono: 555-555-5555</p>
+            <p>Email: info@misitio.com</p>
+        </div>
+
+        <div>
+            <h4>Enlaces</h4>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="./nosotros.html">Quienes Somos</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <h4>Síguenos</h4>
+            <ul>
+                <li><a href="#"><img width="50" src="../img/facebook.svg" alt="Logo de Facebook"></a></li>
+                <li><a href="#"><img width="50" src="../img/twitter.svg" alt="Logo de Twitter"></a></li>
+                <li><a href="#"><img width="50" src="../img/instagram.svg" alt="Logo de instagram"></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p>Copyright © 2023 iFix</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
